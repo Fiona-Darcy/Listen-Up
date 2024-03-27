@@ -6,7 +6,7 @@ const APIController = (function() {
     // private methods
     const _getToken = async () => {
 
-        const result = await fetch('https://accounts.spotify.com/api/token', {
+        const result = await fetch(`https://accounts.spotify.com/api/token`, {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/x-www-form-urlencoded', 
@@ -34,7 +34,7 @@ const APIController = (function() {
 
         const limit = 10;
         
-        const result = await fetch(`https://api.spotify.com/v1/browse/categories/${genreId}/playlists?limit=${limit}`, {
+        const result = await fetch(`https://api.spotify.com/v1/browse/categories/${genreId}/playlists?locale=sv_US?limit=${limit}`, {
             method: 'GET',
             headers: { 'Authorization' : 'Bearer ' + token}
         });
