@@ -26,29 +26,10 @@ option {
     right: 200px;
 }
 
-/*.dropdown-menu {
-    font-size: smaller;
-    padding: 0;
-}*/
-
 body {
     background-color: white;
     padding-top: none;
 }
-
-/*#select-genre {
-    padding-top: 20%;
-}*/
-
-/*.form-label {
-    padding: auto !important;
-    color: white;
-
-}*/
-
-/*.form-group {
-    padding-top: 30px;
-}*/
 
 .btn-success {
     background-color: #fac84b!important;
@@ -57,14 +38,6 @@ body {
 .btn-success:hover {
     background-color: #ffd774!important;
 }
-
-/*img.track {
-    border: 1px solid #8a8a8a;
-}*/
-
-/*.row {
-    display: relative;
-}*/
 
 #song-detail {
     font-weight: lighter;
