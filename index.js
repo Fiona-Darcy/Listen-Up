@@ -3,7 +3,6 @@ const APIController = (function() {
     const clientId = 'a2dc43aade104b639e32fa23882d0f74';
     const clientSecret = '9f61c455493c45fcb87ff93abba92328';
 
-    // private methods
     const _getToken = async () => {
 
         const result = await fetch(`https://accounts.spotify.com/api/token`, {
@@ -21,7 +20,7 @@ const APIController = (function() {
     
     const _getGenres = async (token) => {
 
-        const result = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_US`, {
+        const result = await fetch(`https://api.spotify.com/v1/browse/categories?locale=en_US`, {
             method: 'GET',
             headers: { 'Authorization' : 'Bearer ' + token}
         });
@@ -34,7 +33,7 @@ const APIController = (function() {
 
         const limit = 10;
         
-        const result = await fetch(`https://api.spotify.com/v1/browse/categories/${genreId}/playlists?locale=sv_US?limit=${limit}`, {
+        const result = await fetch(`https://api.spotify.com/v1/browse/categories/${genreId}/playlists?locale=en_US&limit=${limit}`, {
             method: 'GET',
             headers: { 'Authorization' : 'Bearer ' + token}
         });

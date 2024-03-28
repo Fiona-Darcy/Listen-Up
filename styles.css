@@ -13,12 +13,11 @@ option {
 }
 
 .container {
-    background-color: #2A9D8F !important;
-    display: relative;
-    width: 600px;
-    height: 300px;
+    background-color: #00a390 !important;
+    width: 60vh;
+    height: 40vh;
     border-radius: 5%;
-    padding-top: 25px;
+    padding: 5vh;
 }
 
 .dropdown-menu {
@@ -27,9 +26,8 @@ option {
 }
 
 body {
-    display: relative;
     background-color: white;
-    padding-top: 250px;
+    padding-top: none;
 }
 
 #select-genre {
@@ -46,16 +44,8 @@ body {
     padding-top: 30px;
 }
 
-img {
-    width:140px;
-    height:140px;
-    display: relative;
-    margin-top: -250px;
-    margin-left: 555px;
-}
-
 .btn-success {
-    background-color: #E9C46A!important;
+    background-color: #fac84b!important;
 }
 
 .btn-success:hover {
@@ -66,21 +56,17 @@ img.track {
     border: 1px solid #8a8a8a;
 }
 
-.row {
+/*.row {
     display: relative;
-}
+}*/
 
 #song-detail {
     font-weight: lighter;
-    display: absolute;
 }
 
-/*img {
-    object-fit: cover;
-}*/
-
 img {
-    height:500px;
-    width:500px;
-    object-fit: contain;
+    width: 35%;
+    height: 35%;
+    padding-top: none;
+    padding-left: none;
 }
