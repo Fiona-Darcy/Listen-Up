@@ -1,46 +1,46 @@
 * {
     font-weight: bold;
-    background-color: #E9C46A !;
+    font-size: 20px;
 }
 
 option {
     background-color: white;
 }
+
 .btn.dropdown-toggle  {
     width:150px;
     text-align:left;
-   
 }
+
 .container {
     background-color: #2A9D8F !important;
-    display: flex;
-    align-items: column;
-    justify-content: center;
-    width: 45%;
+    display: relative;
+    width: 600px;
+    height: 300px;
     border-radius: 5%;
     padding-top: 25px;
 }
-span.caret {
-    position: absolute;
-    left: 90%;
-    top: 45%;
+
+.dropdown-menu {
+    font-size: smaller;
+    padding: 0;
 }
 
 body {
-    display: flex;
-    background-color: #E9C46A;
+    display: relative;
+    background-color: white;
     padding-top: 250px;
 }
-
 
 #select-genre {
     padding-top: 20%;
 }
 
-.form-label {
+/*.form-label {
     padding: auto !important;
+    color: white;
 
-}
+}*/
 
 .form-group {
     padding-top: 30px;
@@ -49,6 +49,9 @@ body {
 img {
     width:140px;
     height:140px;
+    display: relative;
+    margin-top: -250px;
+    margin-left: 555px;
 }
 
 .btn-success {
@@ -61,4 +64,23 @@ img {
 
 img.track {
     border: 1px solid #8a8a8a;
+}
+
+.row {
+    display: relative;
+}
+
+#song-detail {
+    font-weight: lighter;
+    display: absolute;
+}
+
+/*img {
+    object-fit: cover;
+}*/
+
+img {
+    height:500px;
+    width:500px;
+    object-fit: contain;
 }

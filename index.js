@@ -67,6 +67,15 @@ const APIController = (function() {
         return data;
     }
 
+    /*const _playTrack = async (token, listenToSong) => {
+        const result = await fetch(`https://api.spotify.com/v1/me/player/play`, {
+            method: 'PUT',
+            headers: { 'Authorization' : 'Bearer ' + token}
+        });
+        const data = await result.json();
+        return data;
+    }*/
+
     return {
         getToken() {
             return _getToken();
@@ -83,6 +92,9 @@ const APIController = (function() {
         getTrack(token, trackEndPoint) {
             return _getTrack(token, trackEndPoint);
         }
+        /*playTrack(token, listenToSong) {
+            return _playTrack(token, listenToSong);
+        }*/
     }
 })();
 
