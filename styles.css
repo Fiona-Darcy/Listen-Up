@@ -8,31 +8,37 @@ option {
 }
 
 .btn.dropdown-toggle  {
-    width:150px;
+    width:15px;
     text-align:left;
 }
 
 .container {
     background-color: #00a390 !important;
-    width: 60vh;
-    height: 40vh;
+    width: fit-content;
+    height: fit-content;
     border-radius: 5%;
     padding: 5vh;
 }
 
-.dropdown-menu {
+#info-box {
+    display: relative;
+    top: 50px;
+    right: 200px;
+}
+
+/*.dropdown-menu {
     font-size: smaller;
     padding: 0;
-}
+}*/
 
 body {
     background-color: white;
     padding-top: none;
 }
 
-#select-genre {
+/*#select-genre {
     padding-top: 20%;
-}
+}*/
 
 /*.form-label {
     padding: auto !important;
@@ -40,9 +46,9 @@ body {
 
 }*/
 
-.form-group {
+/*.form-group {
     padding-top: 30px;
-}
+}*/
 
 .btn-success {
     background-color: #fac84b!important;
@@ -52,9 +58,9 @@ body {
     background-color: #ffd774!important;
 }
 
-img.track {
+/*img.track {
     border: 1px solid #8a8a8a;
-}
+}*/
 
 /*.row {
     display: relative;
@@ -62,11 +68,28 @@ img.track {
 
 #song-detail {
     font-weight: lighter;
+    width: 100vh;
 }
 
 img {
     width: 35%;
     height: 35%;
     padding-top: none;
-    padding-left: none;
+}
+
+.dropdown-menu, .dropdown-menu-container {
+    padding: 0;
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 60%;
+        display: relative;
+    }
+    }
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .container {
+        width: 70%;
+    }
 }
